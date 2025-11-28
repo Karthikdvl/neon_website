@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Projects - DVL Karthik</title>
+  <link rel="stylesheet" href="project_styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+  <nav>
+    <h1>DVL KARTHIK</h1>
+    <ul>
+      <li><a href="./index.html">Home</a></li>
+      <li><a href="./project_html.html" class="active">Projects</a></li>
+      <li><a href="./aboutMe_html.html">About</a></li>
+      <li><a href="./skills_html.html">Skills</a></li>
+      <li><a href="#">Contact</a></li>
+      <li><a href="#">Resume</a></li>
+    </ul>
+  </nav>
+
+  <section class="projects-section">
+    <h2><span class="gradient-text">My Projects</span></h2>
+
+    <p>A collection of data science projects showcasing machine learning, artificial intelligence, and advanced analytics solutions.</p>
+
+    <div class="filters">
+      <button class="filter-btn active" onclick="filterProjects('all')">All</button>
+      <button class="filter-btn" onclick="filterProjects('ml')">Machine Learning</button>
+      <button class="filter-btn" onclick="filterProjects('viz')">Data Visualization</button>
+      <button class="filter-btn" onclick="filterProjects('nlp')">NLP</button>
+      <button class="filter-btn" onclick="filterProjects('cv')">Computer Vision</button>
+    </div>
+
+    <div class="project-grid">
+      <div class="project-card ml">
+        <img src="assets/profile_pic.png" alt="Predictive Dashboard">
+        <h3>Predictive Analytics Dashboard</h3>
+        <p>A comprehensive ML pipeline for sales forecasting with visualizations and real-time data processing.</p>
+        <div class="tags"><span>Python</span><span>TensorFlow</span><span>Plotly</span><span>FastAPI</span></div>
+      </div>
+
+      <div class="project-card nlp">
+        <img src="https://via.placeholder.com/300x180" alt="NLP Analyzer">
+        <h3>NLP Sentiment Analyzer</h3>
+        <p>Social media sentiment analysis using BERT transformers and Docker deployment.</p>
+        <div class="tags"><span>PyTorch</span><span>BERT</span><span>Docker</span><span>AWS</span></div>
+      </div>
+
+      <div class="project-card cv">
+        <img src="https://via.placeholder.com/300x180" alt="Object Detection">
+        <h3>Computer Vision Object Detection</h3>
+        <p>YOLO-based object detection system for autonomous apps with edge deployment.</p>
+        <div class="tags"><span>YOLO</span><span>OpenCV</span><span>TensorRT</span><span>CUDA</span></div>
+      </div>
+
+      <div class="project-card viz">
+        <img src="https://via.placeholder.com/300x180" alt="Interactive Stories">
+        <h3>Interactive Data Stories</h3>
+        <p>Transforms datasets into visual narratives using D3.js and React.</p>
+        <div class="tags"><span>D3.js</span><span>React</span><span>PostgreSQL</span></div>
+      </div>
+
+      <div class="project-card ml">
+        <img src="https://via.placeholder.com/300x180" alt="Time Series">
+        <h3>Time Series Forecasting</h3>
+        <p>Financial forecasting using LSTM networks and statistical models.</p>
+        <div class="tags"><span>LSTM</span><span>Prophet</span><span>Pandas</span></div>
+      </div>
+
+      <div class="project-card ml">
+        <img src="https://via.placeholder.com/300x180" alt="Healthcare">
+        <h3>Healthcare Data Analytics</h3>
+        <p>Medical image classification using CNN and federated learning.</p>
+        <div class="tags"><span>CNN</span><span>TensorFlow</span><span>Flask</span></div>
+      </div>
+    </div>
+
+      
+  </section>
+
+  <script src="project_js.js"></script>
+</body>
+</html>
